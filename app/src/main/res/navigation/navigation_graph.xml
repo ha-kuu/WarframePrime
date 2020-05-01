@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.implementationactivity.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_warframeStoreFragment"
+            app:destination="@id/warframeStoreFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_weaponStoreFragment"
+            app:destination="@id/weaponStoreFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_viewFragment"
+            app:destination="@id/viewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_companionStoreFragment"
+            app:destination="@id/companionStoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.example.implementationactivity.ViewFragment"
+        android:label="fragment_view"
+        tools:layout="@layout/fragment_view" >
+        <action
+            android:id="@+id/action_viewFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/warframeStoreFragment"
+        android:name="com.example.implementationactivity.WarframeStoreFragment"
+        android:label="fragment_warframe_store"
+        tools:layout="@layout/fragment_warframe_store" >
+        <action
+            android:id="@+id/action_warframeStoreFragment_to_weaponStoreFragment"
+            app:destination="@id/weaponStoreFragment" />
+        <action
+            android:id="@+id/action_warframeStoreFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_warframeStoreFragment_to_companionStoreFragment"
+            app:destination="@id/companionStoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weaponStoreFragment"
+        android:name="com.example.implementationactivity.WeaponStoreFragment"
+        android:label="fragment_weapon_store"
+        tools:layout="@layout/fragment_weapon_store" >
+        <action
+            android:id="@+id/action_weaponStoreFragment_to_warframeStoreFragment"
+            app:destination="@id/warframeStoreFragment" />
+        <action
+            android:id="@+id/action_weaponStoreFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_weaponStoreFragment_to_companionStoreFragment"
+            app:destination="@id/companionStoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/companionStoreFragment"
+        android:name="com.example.implementationactivity.CompanionStoreFragment"
+        android:label="fragment_companion_store"
+        tools:layout="@layout/fragment_companion_store" >
+        <action
+            android:id="@+id/action_companionStoreFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_companionStoreFragment_to_warframeStoreFragment"
+            app:destination="@id/warframeStoreFragment" />
+        <action
+            android:id="@+id/action_companionStoreFragment_to_weaponStoreFragment"
+            app:destination="@id/weaponStoreFragment" />
+    </fragment>
+</navigation>

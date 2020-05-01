@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".WarframeStoreFragment">
+
+        <Button
+            android:id="@+id/weaponbuttononwarframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="90dp"
+            android:text="Weapon" />
+
+        <Button
+            android:id="@+id/companionbuttononwarframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="150dp"
+            android:layout_marginBottom="90dp"
+            android:text="Companion" />
+
+        <Button
+            android:id="@+id/applybuttononwarframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="280dp"
+            android:layout_marginBottom="90dp"
+            android:text="apply" />
+
+        <EditText
+            android:id="@+id/warframenametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:ems="10"
+            android:hint="Warframe Name"
+            android:inputType="textPersonName"
+            android:textSize="15dp" />
+        <Button
+            android:id="@+id/implementbuttononwarframe"
+            android:layout_width="77dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:text="Implement"
+            android:textSize="7dp"
+            />
+
+        <EditText
+            android:id="@+id/warframeblueprintname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="12dp"
+            android:inputType="textPersonName"
+            android:layout_marginRight="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="275dp"
+            android:hint="Blueprint"
+            />
+        <TextView
+            android:id="@+id/warframeblueprintnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="285dp"
+            android:layout_marginLeft="100dp"
+            android:text="0"
+            />
+        <Button
+            android:id="@+id/minusblueprintonwarframe"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="275dp"
+            android:layout_marginLeft="60dp"
+            android:text="-" />
+        <Button
+            android:id="@+id/plusblueprintonwarframe"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="275dp"
+            android:layout_marginLeft="150dp"
+            android:text="+" />
+
+        <EditText
+            android:id="@+id/warframechassisname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="350dp"
+            android:layout_marginRight="70dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Chassis"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/warframechassisnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="100dp"
+            android:text="0"
+            />
+        <Button
+            android:id="@+id/minuschassisonwarframe"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="60dp"
+            android:text="-" />
+        <Button
+            android:id="@+id/pluschassisonwarframe"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="150dp"
+            android:text="+" />
+
+        <EditText
+            android:id="@+id/warframeneuropticsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="12dp"
+            android:layout_marginRight="70dp"
+            android:inputType="textPersonName"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="425dp"
+            android:hint="Neuroptics"
+            />
+        <TextView
+            android:id="@+id/warframeneuropticsnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="435dp"
+            android:layout_marginLeft="100dp"
+            android:text="0"
+            />
+        <Button
+            android:id="@+id/minusneuropticswarframe"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="425dp"
+            android:layout_marginLeft="60dp"
+            android:text="-" />
+        <Button
+            android:id="@+id/plusneuropticswarframe"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="425dp"
+            android:layout_marginLeft="150dp"
+            android:text="+" />
+
+        <EditText
+            android:id="@+id/warframesystemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="500dp"
+            android:layout_marginRight="70dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="System"
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/warframesystemnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="510dp"
+            android:layout_marginLeft="100dp"
+            android:text="0"
+            />
+        <Button
+            android:id="@+id/minussystemonwarframe"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="495dp"
+            android:layout_marginLeft="60dp"
+            android:text="-" />
+        <Button
+            android:id="@+id/plussystemonwarframe"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="495dp"
+            android:layout_marginLeft="150dp"
+            android:text="+" />
+
+
+
+    </FrameLayout>
+</layout>
